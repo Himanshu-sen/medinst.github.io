@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png" type="image/icon type">
+
+
+    <style>
+        .faq .accordion-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .faq .accordion-container .accordion {
+            flex: 1 1 40rem;
+            border: 0.1rem solid #0eb582;
+        }
+
+        .faq .accordion-container .accordion.active .accordion-heading {
+            background: #0eb582;
+        }
+
+        .faq .accordion-container .accordion.active .accordion-heading h3 {
+            color: #fff;
+        }
+
+        .faq .accordion-container .accordion.active .accordion-heading i {
+            color: #fff;
+            transform: rotate(180deg);
+        }
+
+        .faq .accordion-container .accordion.active .accordion-content {
+            display: block;
+        }
+
+        .faq .accordion-container .accordion .accordion-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            cursor: pointer;
+            padding: 1.5rem;
+        }
+
+        .faq .accordion-container .accordion .accordion-heading h3 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: #333;
+        }
+
+        .faq .accordion-container .accordion .accordion-heading i {
+            font-size: 2rem;
+            color: #0eb582;
+        }
+
+        .faq .accordion-container .accordion .accordion-content {
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            line-height: 2;
+            color: #777;
+            border-top: 0.1rem solid #0eb582;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/medinst1.png" alt=""></a>
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">home</a>
+            <a href="product.html">product</a>
+            <a href="index.html#contact">contact</a>
+
+        </nav>
+        <div class="icons">
+            <div id="account-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+
+    </header>
+
+
+
+
+    <div class="account-form">
+        <div id="close-form" class="fas fa-times"></div>
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+        <form class="login-form active" action="">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box" name="" id="">
+            <input type="password" placeholder="enter your password" class="box" name="" id="">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember-me</label>
+                <a href="">forget password</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="enter your email" class="box" name="" id="">
+            <input type="password" placeholder="enter your password" class="box" name="" id="">
+            <input type="password" placeholder="conform your password" class="box" name="" id="">
+
+            <input type="submit" value="register now" class="btn">
+        </form>
+    </div>
+
+    <section class="heading-link2">
+        <h3>FAQ</h3>
+    </section>
+
+    <section class="faq">
+        <h1 class="heading">frequently asked question</h1>
+        <div class="accordion-container">
+
+
+            <div class="accordion active">
+                <div class="accordion-heading">
+                    <h3>Are your products of high quality and reliable?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">Yes, at MEDINST, we prioritize quality and reliability. We partner with
+                    renowned manufacturers and suppliers who adhere to stringent quality standards. Our products undergo
+                    rigorous testing to ensure they meet industry regulations and deliver exceptional performance.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>Can you provide product demonstrations?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">Yes, we can arrange product demonstrations upon request. Please contact us
+                    to schedule a demonstration at your convenience.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>Can you provide technical support and assistance?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">Yes, MEDINST understands that each healthcare facility may have specific
+                    needs. We offer customized solutions tailored to your unique requirements. Our team will work
+                    closely with you to understand your needs and provide personalized recommendations.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>Where does MEDINST operate and ship its products?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">MEDINST operates in Indore and serves clients locally as well as
+                    nationwide. We ship our products across India, ensuring timely delivery to your desired location.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>How long does it take to receive a response from MEDINST?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">We strive to respond to your queries as quickly as possible. You can expect
+                    a prompt response within our business hours.</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>What types of medical instruments does MEDINST supply?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">MEDINST supplies a wide range of medical instruments, including multi-para
+                    monitors, ECGs, ventilators, oxygen concentrators, bi-pap machines, syringe pumps, and storage
+                    solutions. Our comprehensive product catalog caters to various healthcare needs.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>medist</h3>
+                <p>Quality medical instruments and services for optimal patient care.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html" class="link">home</a>
+                <a href="index.html#about" class="link">about</a>
+                <a href="product.html" class="link">product</a>
+                <a href="index.html#contact" class="link">contact</a>
+            </div>
+            <div class="box">
+                <h3>usefull links</h3>
+                <a href="" class="link">help center</a>
+                <a href="" class="link">ask question</a>
+                <a href="" class="link">send feedback</a>
+                <a href="" class="link">private policy</a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest update</p>
+                <form action="" method="post">
+                    <input type="email" name="" placeholder="enter you name" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="credit">created by <span> himanshu sen</span></div>
+    </section>
+
+
+
+    <script>
+        let accordion = document.querySelectorAll('.faq .accordion-container .accordion');
+
+        accordion.forEach(acco => {
+            acco.onclick = () => {
+                accordion.forEach(dion => dion.classList.remove('active'));
+                acco.classList.toggle('active');
+            };
+        });
+    </script>
+
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
+</html>
