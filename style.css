@@ -566,17 +566,21 @@ main {
   resize: none;
 }
 
-.reviews .slide {
+.reviews .s {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.reviews .s .slide {
   text-align: center;
   position: relative;
-  width: 30rem;
-  display: flex;
+  overflow: hidden;
+  margin: 3rem;
 }
-.reviews .slide .relative {
+.reviews .s .slide .relative {
   position: relative;
-  flex: 1 1 30rem;
 }
-.reviews .slide .relative p {
+.reviews .s .slide .relative p {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
@@ -586,7 +590,7 @@ main {
   margin-bottom: 3rem;
   padding: 2rem;
 }
-.reviews .slide .relative p::before {
+.reviews .s .slide .relative p::before {
   content: "";
   position: absolute;
   bottom: -1.2rem;
@@ -598,21 +602,21 @@ main {
   height: 2rem;
   width: 2rem;
 }
-.reviews .slide .relative img {
+.reviews .s .slide .relative img {
   height: 7rem;
+  width: 7rem;
   border-radius: 50%;
 }
-.reviews .slide .relative h3 {
+.reviews .s .slide .relative h3 {
   font-size: 2.2rem;
   text-transform: capitalize;
   color: #333;
   padding: 0.5rem 0;
 }
-.reviews .slide .relative .stars {
+.reviews .s .slide .relative .stars {
   font-size: 1.5rem;
   color: #0eb582;
 }
-
 .footer {
   background: #f0fdfa;
 }
